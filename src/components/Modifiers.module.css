@@ -1,0 +1,65 @@
+.chipBody {
+    display: flex;
+    flex-direction: column;
+    width: inherit;
+    padding: 0.5em;
+}
+
+.chipRow {
+    background: linear-gradient(0.25turn, #555870, #3a3e53);
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.modifierSlider {
+    flex-grow: 5;
+    accent-color: #3a97ed;
+}
+.modifierImg {
+    flex-grow: 0;
+    min-height: 2em;
+    max-height: 3em;
+    margin: 0.5em;
+}
+.modifierTwiddle {
+    display: visible;
+    background-color: #000000;
+    border: 0px solid transparent;
+}
+
+.lineWidthSlider {
+    flex-grow: 5;
+    position: relative;
+    accent-color: #3a97ed;
+}
+.dualSliderUnderlay {
+    position: absolute;
+    z-index: 0;
+    left: 0;
+    top: 0;
+    width: 0;
+    height: 0;
+}
+.dualSliderOverlay {
+    position: absolute;
+    z-index: 2;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 4em;
+    min-height: 2em;
+    max-height: 5em;
+    margin: 0px;
+}
+
+.colorPickRow {
+    background: linear-gradient(0.25turn, #555870, #3a3e53);
+    padding: 0.5em;
+    gap: 0.5em;
+    display: flex;
+    flex-direction: row;
+}
+.colorPickItem {
+    flex-grow: 1;
+}

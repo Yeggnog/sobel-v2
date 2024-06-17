@@ -1,42 +1,58 @@
 #root {
-  max-width: 1280px;
   margin: 0 auto;
-  padding: 2rem;
+  width: 100vw;
+  height: 100vh;
   text-align: center;
+
+  display: grid;
+  grid-template-areas: 
+  'sidebar header header'
+  'sidebar main main'
+  'sidebar main main'
+  'sidebar footer footer';
+  background-color: #000000;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
+#PreviewImg{
+  display: none;
 }
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+#LogoType{
+  max-height: 3em;
+  min-height: 1.5em;
+  margin: 0.25em;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  grid-template-rows: 0.5fr 1fr 0.5fr;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.full-layout {
+  display: flex;
+  flex-direction: row;
 }
 
-.card {
-  padding: 2em;
+.modifierList {
+  grid-area: sidebar;
+  background-color: #3a3e53;
 }
-
-.read-the-docs {
-  color: #888;
+.mainContent {
+  grid-area: main;
+  background-color: #000000;
+}
+.topBanner {
+  grid-area: header;
+  background-color: #000000;
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+}
+.bottomBanner {
+  grid-area: footer;
+  background-color: #000000;
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+  padding: 0.25em;
 }

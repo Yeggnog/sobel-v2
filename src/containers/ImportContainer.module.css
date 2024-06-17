@@ -1,0 +1,33 @@
+.panelRowLeft {
+    background: linear-gradient(0.25turn, #555870, #3a3e53);
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-shrink: 1;
+    padding: 0.5em;
+    gap: 0.5em;
+}
+.panelRowRight {
+    background: linear-gradient(0.75turn, #555870, #3a3e53);
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    flex-shrink: 1;
+    padding: 0.5em;
+    gap: 0.5em;
+}
+
+.previewImg {
+    margin: 0.5em;
+    max-height: 50vh;
+}
+
+.icon {
+    max-height: 4em;
+    min-height: 2em;
+}
+
+button {
+    background-color: #3a97ed;
+    flex-grow: 1;
+}
